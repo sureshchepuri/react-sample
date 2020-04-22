@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+div.top-background {
+  position: absolute;
+  z-index: 0;
+  background-color: lightskyblue;
+  height: 27%;
+  width: 100%;
+  left: 0;
+}
+ul.benefit-buttons {
+  list-style: none;
+  display: flex;
+  padding: 10px;
+}
+li.benefit-button {
+  background: gray;
+  color: white;
+  margin: 0 10px;
+}
+li.benefit-button a {
+  color: white;
+  padding: 0 21px;
+  text-align: center;
+}
+li.benefit-button:after {
+
+}
+li.benefit-button.active::after {
+  content: " ";
+  width: 0;
+  height: 0;
+  border-left: 63px solid transparent;
+  border-right: 142px solid transparent;
+  border-top: 13px solid #f00;
+  top: 34px;
+  position: relative;
+}
